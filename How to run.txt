@@ -1,0 +1,28 @@
+Step 1 - Open Terminal / Powershell and set python environment = python -m venv venv
+
+Step 2 - Just after that run = .\venv\Scripts\Activate.ps1
+
+Step 3 - install = pip install -r requirements.txt
+
+Step 4 - Train the Model = python train_phish_model.py
+
+Step 5 - Run the Web App = python app.py
+
+Step 6 - Then open in browser and paste this url : = http://localhost:5000/
+
+
+Test Examples :-
+
+URL						Expected Result
+
+https://google.com				✅ Safe
+https://secure-login.paypal.com			⚠️ Phishing
+http://192.168.0.1/login			⚠️ Phishing
+https://github.com				✅ Safe
+
+ 
+
+ 			OR
+
+
+Just simply just open the run_app file

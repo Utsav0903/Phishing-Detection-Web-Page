@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Phishing Detection — Don’t Take the Bait 🐟</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card header">
+      <div class="brand">
+        <div class="logo">PD</div>
+        <div>
+          <div class="title">Phishing Detection</div>
+          <div class="subtitle">Don’t Take the Bait, Stay Cyber-Safe</div>
+        </div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-size:0.85rem;color:var(--muted)"></div>
+      </div>
+    </div>
+
+    <div class="card">
+  <p>Enter a URL below to check if it’s safe or suspicious.</p>
+
+  <!-- URL Input -->
+  <input id="url" type="text" placeholder="https://example.com" />
+
+  <!-- Buttons placed BELOW input -->
+  <div class="button-row">
+  <button class="btn" onclick="checkURL()">Check</button>
+  <button id="runBtn" class="btn run-btn" onclick="runURL()">Run</button>
+</div>
+
+<div id="out" style="margin-top:20px"></div>
+ <details class="details">
+  <summary>📘 Theory & Method (click to expand)</summary>
+  <div class="theory-content">
+    <p>
+      This <b>Phishing Detection System</b> helps you find out if a website link is 
+      <b>safe or fake</b> using <b>machine learning</b>.
+    </p>
+
+    <p>It checks every URL carefully by looking at things like:</p>
+    <ul>
+      <li>How long the link is</li>
+      <li>Whether it uses special characters or extra symbols</li>
+      <li>If it contains too many subdomains</li>
+      <li>Whether it uses an <b>IP address instead of a domain name</b></li>
+      <li>And if it includes suspicious words such as <i>login</i>, <i>verify</i>, <i>update</i>, or <i>secure</i></li>
+    </ul>
+
+    <p>
+      The system uses a smart model called a <b>Random Forest Classifier</b>.
+      This model studies thousands of real and fake links to learn the difference.
+      Based on that learning, it can <b>predict</b> how likely a new link is to be 
+      <b>phishing</b> — all this happens instantly, without actually opening the website.
+    </p>
+
+    <p>When you enter a link, the system:</p>
+    <ul>
+      <li>Tells you if the link is <i>safe</i> or <i>suspicious</i></li>
+      <li>Shows a <b>phishing probability score</b> (how risky it might be)</li>
+      <li>Explains <b>why</b> it made that decision in clear, simple points</li>
+    </ul>
+
+    <p>
+      In short, this tool helps users stay safe online by quickly checking any link before clicking — 
+      giving you confidence and protection from phishing scams.
+    </p>
+  </div>
+</details>
+
+
+</div>
+
+<script src="/static/script.js"></script>
